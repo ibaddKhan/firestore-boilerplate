@@ -18,9 +18,8 @@ import {
 
 createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
-    // Signed up
     const user = userCredential.user;
-    // ...
+    
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -32,9 +31,7 @@ createUserWithEmailAndPassword(auth, email, password)
 
 signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
-    // Signed in
     const user = userCredential.user;
-    // ...
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -72,8 +69,6 @@ updateProfile(auth.currentUser, {
 
 updateEmail(auth.currentUser, "user@example.com")
   .then(() => {
-    // Email updated!
-    // ...
   })
   .catch((error) => {
     // An error occurred
