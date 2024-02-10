@@ -103,6 +103,10 @@ import {
   Timestamp,
 } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 
+//Add data
+ const docRef = await addDoc(collection(db, "courses"), courseObj);
+    console.log("Document written with ID: ", docRef.id);
+
 //!Image storage boilerplate
 
 //? Image storage Imports
